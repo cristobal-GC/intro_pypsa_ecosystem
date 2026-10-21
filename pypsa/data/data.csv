@@ -1,0 +1,21 @@
+parameter,value,unit,description
+solar_p_nom,20,MW,Installed capacity of the solar PV park
+solar_overnight_cost,600000,EUR/MW,Total (non-annualised) investment cost of solar PV
+solar_lifetime,25,years,Lifetime of solar PV
+solar_marginal_cost,0,EUR/MWh,Operational cost of solar PV
+wind_p_nom,20,MW,Installed capacity of the onshore wind park
+wind_overnight_cost,1100000,EUR/MW,Total (non-annualised) investment cost of onshore wind
+wind_lifetime,25,years,Lifetime of onshore wind
+wind_marginal_cost,5,EUR/MWh,Operational cost of onshore wind
+ccgt_p_nom,50,MW,Installed capacity of the combined cycle gas turbine
+ccgt_overnight_cost,900000,EUR/MW,Total (non-annualised) investment cost of CCGT
+ccgt_lifetime,30,years,Lifetime of CCGT
+ccgt_marginal_cost,80,EUR/MWh,Operational cost of CCGT (fuel + CO2 + variable O&M)
+discount_rate,0.07,per unit,Discount rate used to annualise investment costs
+line_length,50,km,Length of each line
+line_overnight_cost,600,EUR/MW/km,Total (non-annualised) investment cost of the lines per MW of capacity and km
+line_lifetime,40,years,Lifetime of the lines
+v_nom,220,kV,Nominal voltage of the buses
+line_x,10,Ohm,Series reactance of each line
+line_r,1,Ohm,Series resistance of each line
+line_s_nom,50,MVA,Thermal capacity of each line
