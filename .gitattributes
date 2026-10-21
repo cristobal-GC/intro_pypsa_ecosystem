@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# pixi lock file: no 3-way merges (regenerate on conflict) and GitHub syntax highlighting
+pixi.lock merge=binary linguist-language=YAML linguist-generated=true
+

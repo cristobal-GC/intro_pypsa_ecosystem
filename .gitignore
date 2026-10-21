@@ -1,0 +1,13 @@
+# pixi environments
+.pixi/
+*.egg-info
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+
+# Solver / optimisation artefacts
+*.lp
+*.log
+*.sol
+
