@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="380" viewBox="0 0 820 380" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#222">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="violet"/>
+    </marker>
+  </defs>
+
+  <!-- Background (keeps the figure readable with dark notebook themes) -->
+  <rect x="0" y="0" width="820" height="380" rx="10" fill="white"/>
+
+  <!-- ===== Grid side ===== -->
+  <!-- Solar PV park -->
+  <line x1="95" y1="110" x2="190" y2="110" stroke="grey" stroke-width="2"/>
+  <circle cx="75" cy="110" r="20" fill="gold" stroke="#555" stroke-width="1.5"/>
+  <text x="75" y="116" text-anchor="middle" font-size="18">~</text>
+  <text x="75" y="150" text-anchor="middle" font-size="13">Solar_South</text>
+
+  <!-- Line to Center -->
+  <line x1="40" y1="250" x2="190" y2="250" stroke="grey" stroke-width="2"/>
+  <text x="115" y="240" text-anchor="middle" font-size="13">to Center</text>
+  <text x="115" y="270" text-anchor="middle" font-size="12" fill="#666">(South-Center line)</text>
+
+  <!-- South bus (AC) -->
+  <rect x="190" y="70" width="10" height="220" fill="grey"/>
+  <text x="195" y="55" text-anchor="middle" font-weight="bold">South</text>
+  <text x="195" y="310" text-anchor="middle" font-size="12" fill="#666">AC bus</text>
+
+  <!-- ===== Battery (dashed box) ===== -->
+  <rect x="218" y="15" width="587" height="355" rx="12" fill="none" stroke="darkviolet" stroke-width="1.5" stroke-dasharray="7 5"/>
+  <text x="232" y="38" font-weight="bold" fill="darkviolet">Battery</text>
+
+  <!-- Charger link: South -> South_battery -->
+  <line x1="202" y1="110" x2="486" y2="110" stroke="violet" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="352" y="96" text-anchor="middle" font-weight="bold">Battery_South_charger</text>
+  <text x="352" y="130" text-anchor="middle" font-size="12" fill="#444">Link · efficiency η = √0.96</text>
+
+  <!-- Discharger link: South_battery -> South -->
+  <line x1="488" y1="250" x2="204" y2="250" stroke="violet" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="352" y="236" text-anchor="middle" font-weight="bold">Battery_South_discharger</text>
+  <text x="352" y="270" text-anchor="middle" font-size="12" fill="#444">Link · efficiency η = √0.96</text>
+
+  <!-- Inverter annotation -->
+  <text x="352" y="174" text-anchor="middle" font-size="12.5" fill="darkviolet">Inverter (MW): one device, two links</text>
+  <text x="352" y="192" text-anchor="middle" font-size="12.5" fill="darkviolet">p_nom_charger = η · p_nom_discharger</text>
+  <text x="375" y="345" text-anchor="middle" font-size="12" fill="#444">Inverter investment cost assigned to the charger only</text>
+
+  <!-- South_battery bus (DC) -->
+  <rect x="490" y="70" width="10" height="220" fill="darkviolet"/>
+  <text x="495" y="55" text-anchor="middle" font-weight="bold">South_battery</text>
+  <text x="495" y="310" text-anchor="middle" font-size="12" fill="#666">auxiliary DC bus</text>
+
+  <!-- Store -->
+  <line x1="500" y1="180" x2="610" y2="180" stroke="darkviolet" stroke-width="2"/>
+  <rect x="610" y="150" width="110" height="60" rx="6" fill="white" stroke="darkviolet" stroke-width="2.5"/>
+  <rect x="720" y="167" width="9" height="26" rx="2" fill="darkviolet"/>
+  <rect x="620" y="160" width="25" height="40" rx="2" fill="darkviolet"/>
+  <rect x="652" y="160" width="25" height="40" rx="2" fill="darkviolet"/>
+  <rect x="684" y="160" width="25" height="40" rx="2" fill="darkviolet" opacity="0.3"/>
+  <text x="670" y="235" text-anchor="middle" font-weight="bold">Battery_South</text>
+  <text x="670" y="253" text-anchor="middle" font-size="12" fill="#444">Store · storage (MWh)</text>
+  <text x="670" y="270" text-anchor="middle" font-size="12" fill="#444">e_cyclic = True</text>
+</svg>

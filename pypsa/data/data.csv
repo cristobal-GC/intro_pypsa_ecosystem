@@ -11,6 +11,11 @@ ccgt_p_nom,50,MW,Installed capacity of the combined cycle gas turbine
 ccgt_overnight_cost,900000,EUR/MW,Total (non-annualised) investment cost of CCGT
 ccgt_lifetime,30,years,Lifetime of CCGT
 ccgt_marginal_cost,80,EUR/MWh,Operational cost of CCGT (fuel + CO2 + variable O&M)
+battery_inverter_overnight_cost,210000,EUR/MW,Total (non-annualised) investment cost of the battery inverter
+battery_inverter_lifetime,10,years,Lifetime of the battery inverter
+battery_inverter_efficiency,0.96,per unit,Round-trip efficiency of the battery inverter
+battery_storage_overnight_cost,190000,EUR/MWh,Total (non-annualised) investment cost of the battery storage per MWh of energy capacity
+battery_storage_lifetime,25,years,Lifetime of the battery storage
 discount_rate,0.07,per unit,Discount rate used to annualise investment costs
 line_length,50,km,Length of each line
 line_overnight_cost,600,EUR/MW/km,Total (non-annualised) investment cost of the lines per MW of capacity and km
