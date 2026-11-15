@@ -11,3 +11,6 @@ __pycache__/
 *.log
 *.sol
 
+
+# atlite cutouts (large NetCDF files, downloaded by the notebooks)
+B_atlite/data/*.nc

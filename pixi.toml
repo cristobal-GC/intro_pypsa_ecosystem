@@ -9,6 +9,8 @@ python = "3.12.*"
 pypsa = ">=1.4"
 highspy = "*"
 jupyterlab = "*"
+atlite = ">=0.6"
+cartopy = ">=0.26.0,<0.27"
 
 [tasks]
 lab = "jupyter lab"
