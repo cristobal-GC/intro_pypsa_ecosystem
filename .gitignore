@@ -14,3 +14,17 @@ __pycache__/
 
 # atlite cutouts (large NetCDF files, downloaded by the notebooks)
 B_atlite/data/*.nc
+
+# visual_guide: PyPSA-Eur clone, reference networks, sketches, tools, backups and LibreOffice lock files
+visual_guide/pypsa-eur/
+visual_guide/reference_networks/
+visual_guide/sketches/
+visual_guide/tools/
+visual_guide/backups/
+.~lock.*#
+
+# Claude Code project instructions (local only)
+CLAUDE.md
+
+# Presentations: only the exported PDF is versioned
+*.odp

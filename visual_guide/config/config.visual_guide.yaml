@@ -1,0 +1,25 @@
+# Visual Guide reference network.
+# Only the differences from config/config.default.yaml of PyPSA-Eur.
+# Use from the PyPSA-Eur clone (visual_guide/pypsa-eur/):
+#   pixi run snakemake -call --configfile ../config/config.visual_guide.yaml
+# Output: results/visual_guide/networks/solved_2040.nc
+
+run:
+  name: visual_guide
+
+planning_horizons:
+- 2040
+
+countries:
+- ES
+
+clustering:
+  cluster_network:
+    n_clusters: 3
+  temporal:
+    averaging: 168h
+
+solving:
+  solver:
+    name: highs
+    options: highs-default

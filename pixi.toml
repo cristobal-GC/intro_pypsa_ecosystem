@@ -14,3 +14,11 @@ cartopy = ">=0.26.0,<0.27"
 
 [tasks]
 lab = "jupyter lab"
+
+# Tools of visual_guide/ (editing the .odp): `pixi run -e visual-guide python ...`
+[feature.visual-guide.dependencies]
+lxml = "*"
+
+[environments]
+default = { solve-group = "default" }
+visual-guide = { features = ["visual-guide"], solve-group = "default" }
